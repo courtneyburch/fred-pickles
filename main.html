@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fred Pickles</title>
+    <meta name="description" content="Fred Pickles - Handmade Project Bags. Visit our Etsy shop for beautifully crafted, unique bags perfect for your projects.">
+    <meta name="keywords" content="Fred Pickles, handmade bags, project bags, Etsy shop, handmade project bags">
+    <meta name="author" content="Fred Pickles">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ffb6d5, #ffd68a, #c291d9);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+        .menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .hamburger {
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .hamburger div {
+            background-color: white;
+            height: 4px;
+            border-radius: 2px;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0;
+            background-color: #8e44ad; /* darkest purple from gradient */
+            border-radius: 5px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .dropdown a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+    <script>
+        // This function toggles the visibility of the dropdown menu when the hamburger button is clicked
+        function toggleMenu() {
+            const menu = document.getElementById('dropdown');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <button class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <div class="dropdown" id="dropdown">
+            <a href="https://www.etsy.com/shop/fredpickles" target="_blank">Visit my Etsy Shop</a>
+            <a href="mailto:fred@fred-pickles.com">Email Me</a>
+        </div>
+    </div>
+
+    <h1>Fred Pickles</h1>
+    <h2>Handmade Project Bags</h2>
+</body>
+</html>
